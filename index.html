@@ -2,129 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A portfolio website showcasing my web development projects, certifications, skills, and latest learnings in data analytics and web development. Explore my experience and recent achievements.">
     <meta name="author" content="Dharineesh K S">
     <meta name="keywords" content="Dharineesh K S, dharineesh17, dharineesh, web developer, portfolio, web development, certifications, data analytics, skills, projects, responsive design, HTML, CSS, JavaScript, GitHub, LinkedIn, resume, latest learning, completed learning">
     <title>Dharineesh's Portfolio</title>
     <link rel="icon" href="./assests/profile-pic.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <nav class="logo">
+        <div class="logo">
             <a href="./index.html"> <img src="./assests/profile-pic.png" alt="Logo" width="50px" height="50px"></a>
-        </nav>
-        <nav class="header-text">Dharineesh's Portfolio</nav>
-        <nav>
-            <ul class="nav-links">
-                <li>
-                    <a href="#about">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-gray-500">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                    About
-                    </a>
-                </li>
-                <li>
-                    <a href="#skills">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                        </svg>
-                        Skills
-                    </a>
-                </li>
-                <li>
-                    <a href="#education">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
-                        Education
-                    </a>
-                </li>
-                <li>
-                    <a href="#experience">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        Experience
-                    </a>
-                </li>
-                <li>
-                    <a href="#projects">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[22px] h-[22px] text-gray-500">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
-                        </svg>
-                        Projects
-                    </a>
-                </li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+        </div>
+        <div class="header-text">Dharineesh's Portfolio</div>
+        <!-- Toggle Switch Container -->
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
     </header>
+    
+    <!-- Navigation Section -->
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="#about">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-gray-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                About
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-gray-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                    Skills
+                </a>
+            </li>
+            <li>
+                <a href="#education">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                    Education
+                </a>
+            </li>
+            <li>
+                <a href="#experience">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-gray-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Experience
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[22px] h-[22px] text-gray-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
+                    </svg>
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="#works">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 6V5C16 3.34 14.66 2 13 2H11C9.34 2 8 3.34 8 5V6H4C2.9 6 2 6.9 2 8V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V8C22 6.9 21.1 6 20 6H16ZM10 5C10 4.45 10.45 4 11 4H13C13.55 4 14 4.45 14 5V6H10V5ZM20 19H4V8H20V19ZM6 11H10V13H6V11ZM14 11H18V13H14V11Z" />
+                    </svg>                      
+                    Works
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-gray-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                    </svg>
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
 
     <!-- About Section -->
     <section id="about" class="section about-section">
-    <h2>About Me</h2>
-    <div class="about-content">
-        <div>
-            <img src="./assests/profile-pic.png" alt="My Photo" class="profile-photo">
+        <h2 class="h2">About Me</h2>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="./assests/profile-pic.png" alt="My Photo" class="profile-photo">
+            </div>
+            <div class="about-text">
+                <p>
+                    Hi, I'm <strong>Dharineesh</strong>, a dedicated web developer with a passion for crafting visually appealing and responsive websites. With a Bachelor of Technology degree and experience in the banking sector, I'm eager to leverage my technical skills and knowledge to pursue a career in Information Technology.
+                </p> 
+            </div>
         </div>
-        <div class="about-text">
-            <p>
-                Hi, I'm <strong>Dharineesh</strong>, a dedicated web developer with a passion for crafting visually appealing and responsive websites. With a Bachelor of Technology degree and experience in the banking sector, I'm eager to leverage my technical skills and knowledge to pursue a career in Information Technology. My ability to quickly adapt to new technologies and environments, coupled with my strong commitment to achieving organizational goals, makes me a valuable asset to any team.
-            </p> 
-
-            <a href="./assests/resume.pdf" class="btn" target="_blank" download>
+        <div class="about-btn">
+            <a href="./assets/resume.pdf" class="btn" target="_blank" download>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-5 w-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
                 Download Resume
             </a>
-
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/dharineesh17/" class="btn" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path fill="white" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
-                    </svg>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/dharineesh17" class="btn" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path fill="white" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                    </svg>
-                    GitHub
-                </a>
+            <a href="https://www.linkedin.com/in/dharineesh17/" class="btn" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="white" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                </svg>
+                LinkedIn
+            </a>
+            <a href="https://github.com/dharineesh17" class="btn" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path fill="white" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/>
+                </svg>
+                GitHub
+            </a>
+        </div>
+        <h2 class="scrollText">Latest Learning</h2>
+        <div class="scrolling-container">
+            <div class="scrolling-content">
+                <ul class="scrolling-list">
+                    <li><a class="l" href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target="_blank">Currently enrolled in Udemy course "The Complete 2024 Web Development Bootcamp".</a></li>
+                    <li><a class="l" href="https://skillsbuild.org/college-students/digital-credentials/artificial-intelligence-fundamentals" target="_blank">Taking IBM SkillsBuild course "Artificial Intelligence Fundamentals".</a></li>
+                    <li><a class="l" href="https://www.credly.com/badges/f52c0b3c-d0c2-4f98-9962-d881f1508d70/linked_in_profile" target="_blank">Completed Web Development Fundamentals Course - IBM SkillsBuild.</a></li>
+                    <li><a class="l" href="https://www.sololearn.com/certificates/CC-YHK3DKWU" target="_blank">Completed Angular Course - SoloLearn.</a></li>
+                    <li><a class="l" href="https://dharineesh17.w3spaces.com/" target="_blank">Working on a personal project to develop a portfolio website.</a></li>
+                    <li><a class="l" href="" target="_blank">Enrolling in courses to enhance my skills and knowledge.</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    
-    <h3>Latest Learning</h3>
-    <ul>
-        <li>Currently enrolled in Udemy course "The Complete 2024 Web Development Bootcamp.</li>
-        <li>Taking IBM SkillsBuild course "Artificial Intelligence Fundamentals.</li>
-    </ul>
-
-    <h3>Completed Learning</h3>
-    <ul>
-        <li>Completed Web Development Fundamentals Course - IBM SkillsBuild.</li>
-        <li>Completed Angular Course - SoloLearn.</li>
-    </ul>
-
-    <h3>What I Am Doing</h3>
-    <ul>
-        <li>Working on a personal project to develop a portfolio website.</li>
-        <li>Enrolling in courses to enhance my skills and knowledge.</li>
-    </ul>
-    <blockquote class="quote">"The only way to do great work is to love what you do." – Steve Jobs</blockquote>
+        <blockquote class="quote">"The only way to do great work is to love what you do."</blockquote>
     </section>
+
+
+    
 
     <!-- Skills Section -->
     <section id="skills" class="section">
-        <h2>Skills</h2>
+        <h2 class="h2">Skills</h2>
         <div class="skill-list">
             <div class="skill-item">HTML</div>
             <div class="skill-item">CSS</div>
@@ -141,16 +166,16 @@
             <div class="skill-item">Flexibility</div>
             <div class="skill-item">Problem solving</div>
         </div>
-        <blockquote class="quote">"Skill is the unified force of experience, intellect, and passion." – John Ruskin</blockquote>
+        <blockquote class="quote">"Skill is the unified force of experience, intellect, and passion."</blockquote>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="section">
-        <h2>Education</h2>
+        <h2 class="h2">Education</h2>
         <div class="education-list">
 
             <div class="education-item">
-                <h3>Bachelor of Technology in Bioinformatics</h3>
+                <h3 class="h3">Bachelor of Technology in Bioinformatics</h3>
                 <p><strong>University:</strong> SASTRA University</p>
                 <p><strong>Year:</strong> 2019 - 2023</p>
                 <p><strong>Percentage:</strong> 71%</p>
@@ -158,56 +183,55 @@
             </div>
 
             <div class="education-item">
-                <h3>High School (Biomath)</h3>
+                <h3 class="h3">High School (Biomath)</h3>
                 <p><strong>School:</strong> Sri Jayendra Matric Hr Sec School</p>
                 <p><strong>Year:</strong> 2017 - 2019</p>
                 <p><strong>Percentage:</strong> 80%</p>
             </div>
 
             <div class="education-item">
-                <h3>SSLC</h3>
+                <h3 class="h3">SSLC</h3>
                 <p><strong>School:</strong> Sri Sankara Matriculation School</p>
                 <p><strong>Year:</strong> 2006 - 2017</p>
                 <p><strong>Percentage:</strong> 95%</p>
             </div>
         </div>
-        <blockquote class="quote">"Education is the passport to the future, for tomorrow belongs to those who prepare for it today." – Malcolm X</blockquote>
+        <blockquote class="quote">"Education is the passport to the future, for tomorrow belongs to those who prepare for it today."</blockquote>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="section">
-        <h2>Experience</h2>
+        <h2 class="h2">Experience</h2>
         <div class="experience-list">
             <div class="experience-item">
-                <h3>Relationship Manager at City Union Bank LTD</h3>
-                <p><strong>Duration:</strong> March 2024 - June 2024</p>
-                <p><strong>Location:</strong> Vedaranyam, India</p>
-                <p><strong>Responsibilities:</strong> Executed RTGS and NEFT transactions, ensuring accurate and timely processing of fund transfers, showcasing strong attention to detail and reliability. Facilitated the opening and closing of jewel loans, FD, and RD accounts, as well as new customer accounts. Engaged with clients to resolve issues, answer inquiries, and provide personalized assistance, enhancing overall customer satisfaction through effective communication and problem-solving skills.</p>
-                <p><strong>Skills Developed:</strong>Analytical Skills: Accurately processed transactions and resolved issues by applying strong analytical and problem-solving techniques.
-                    Adaptability and Flexibility: Efficiently managed diverse banking tasks and adapted to changing priorities and procedures.
-                    Problem-Solving: Adept at identifying solutions to customer concerns and providing effective support.
-                    Attention to Detail: Meticulous in processing financial data and ensuring transaction accuracy.
-                    Communication: Effective communicator with the ability to interact professionally with clients and team members.
-                    Problem-Solving: Adept at identifying solutions to customer concerns and providing effective support.
-                </p>
+                <h3 class="h3">Relationship Manager at City Union Bank LTD</h3>
+                <p style="margin-top: 5px"><strong>Duration:</strong> March 2024 - June 2024</p>
+                <p style="margin-top: 5px"><strong>Location:</strong> Vedaranyam, India</p>
+                <p style="margin-top: 5px"><strong>Responsibilities:</strong> Executed RTGS and NEFT transactions, ensuring accurate and timely processing of fund transfers, showcasing strong attention to detail and reliability. Facilitated the opening and closing of jewel loans, FD, and RD accounts, as well as new customer accounts. Engaged with clients to resolve issues, answer inquiries, and provide personalized assistance, enhancing overall customer satisfaction through effective communication and problem-solving skills.</p>
+                <p style="margin-top: 5px"><strong>Skills Developed:</strong></p>
+                <p style="margin-top: 5px"><strong>Analytical Skills:</strong> Accurately processed transactions and resolved issues by applying strong analytical and problem-solving techniques.</p>
+                <p style="margin-top: 5px"><strong>Adaptability and Flexibility:</strong> Efficiently managed diverse banking tasks and adapted to changing priorities and procedures.</p>
+                <p style="margin-top: 5px"><strong>Problem-Solving:</strong> Adept at identifying solutions to customer concerns and providing effective support.</p>
+                <p style="margin-top: 5px"><strong>Attention to Detail:</strong>Meticulous in processing financial data and ensuring transaction accuracy.</p>
+                <p style="margin-top: 5px"><strong>Communication:</strong> Effective communicator with the ability to interact professionally with clients and team members.</p>
             </div>
             <div class="experience-item">
-                <h3>Relationship Manager Trainee at City Union Bank LTD</h3>
+                <h3 class="h3">Relationship Manager Trainee at City Union Bank LTD</h3>
                 <p><strong>Duration:</strong> October 2023 - October 2023</p>
                 <p><strong>Location:</strong> Manipal Academy of BFSI, Bengaluru, India</p>
             </div>
             <div class="experience-item">
-                <h3>Relationship Manager Trainee at City Union Bank LTD</h3>
+                <h3 class="h3">Relationship Manager Trainee at City Union Bank LTD</h3>
                 <p><strong>Duration:</strong> September 2023 - September 2023</p>
                 <p><strong>Location:</strong> Remote</p>
             </div>
             <div class="experience-item">
-                <h3>Research Student at Yennamalli Lab</h3>
+                <h3 class="h3">Research Student at Yennamalli Lab</h3>
                 <p><strong>Duration:</strong> March 2022 - June 2023</p>
                 <p><strong>Location:</strong> Thanjavur, India</p>
             </div>
             <div class="experience-item">
-                <h3>Student Intern at Verzeo </h3>
+                <h3 class="h3">Student Intern at Verzeo </h3>
                 <p><strong>Duration:</strong> August 2021 - September 2021</p>
                 <p><strong>Responsibilities:</strong> 
                     Developed and optimized machine learning models.
@@ -216,83 +240,245 @@
                     Fine-tuned models for better accuracy.
                     Analyzed data to find trends and insights.
                 </p>
-                <p><strong>Skills Developed:</strong>
-                    Machine Learning: Built and optimized models to analyze data and make predictions.
-                    Data Preprocessing: Cleaned and prepared data for analysis using Python and Pandas.
-                    Python: Used Python for programming tasks and implementing machine learning algorithms.
-                    Pandas: Utilized Pandas for data manipulation and analysis.
-                </p>
-
+                <p style="margin-top: 5px;"><strong>Skills Developed:</strong></p>
+                <p style="margin-top: 5px;"><strong>Machine Learning:</strong> Built and optimized models to analyze data and make predictions.</p>
+                <p style="margin-top: 5px;"><strong>Data Preprocessing:</strong> Cleaned and prepared data for analysis using Python and Pandas.</p>
+                <p style="margin-top: 5px;"><strong>Python:</strong> Used Python for programming tasks and implementing machine learning algorithms.</p>
+                <p style="margin-top: 5px;"><strong>Pandas:</strong> Utilized Pandas for data manipulation and analysis.</p>
             </div>
         </div>
-        <blockquote class="quote">"Success is not the key to happiness. Happiness is the key to success." – Albert Schweitzer</blockquote>
+        <blockquote class="quote">"Success is not the key to happiness. Happiness is the key to success."</blockquote>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-        <h2>My Projects</h2>
+        <h2 class="h2">My Projects</h2>
         <div class="project-list">
             <div class="project" onclick="showDetails('project1')">
-                <h3>Portfolio Website Development </h3>
+                <h3 class="projectH3" id="project1">Portfolio Website Development </h3>
                 <p>Click to view details</p>
             </div>
             <div class="project" onclick="showDetails('project2')">
-                <h3>Restaurant Website Development </h3>
+                <h3 class="projectH3" id="project2">Restaurant Website Development </h3>
                 <p>Click to view details</p>
             </div>
             <div class="project" onclick="showDetails('project3')">
-                <h3>Fungal LPMO Knowledgebase Network </h3>
+                <h3 class="projectH3" id="project3">Fungal LPMO Knowledgebase Network </h3>
                 <p>Click to view details</p>
             </div>
             <div class="project" onclick="showDetails('project4')">
-                <h3>Task App </h3>
+                <h3 class="projectH3" id="project4">Task App </h3>
                 <p>Click to view details</p>
             </div>
             <div class="project" onclick="showDetails('project5')">
-                <h3>Notes App </h3>
+                <h3 class="projectH3" id="project5">Notes App </h3>
                 <p>Click to view details</p>
             </div>
             <div class="project" onclick="showDetails('project6')">
-                <h3>Calcium Dependent Conformational Changes in Human Transglutaminase 2 and its Implications in Celiac Disease </h3>
+                <h3 class="projectH3" id="project6">Calcium Dependent Conformational Changes in Human Transglutaminase 2 and its Implications in Celiac Disease </h3>
                 <p>Click to view details</p>
             </div>
         </div>
-        <blockquote class="quote">"The secret of getting ahead is getting started." – Mark Twain</blockquote>
+        <!-- Modal Structure -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-header" id="modalTitle">Project Details</div>
+                <div class="modal-body" id="modalDescription">
+                    <!-- Project description will be inserted here -->
+                </div>
+            </div>
+        </div>
+        <blockquote class="quote">"The secret of getting ahead is getting started."</blockquote>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="works" class="section">
+        <h2 class="h2">Works</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openModal(['./assests/portfolio_00.png','./assests/portfolio_01.png'], ['Responsive Portfolio Website'], ['This project showcases a responsive portfolio website built using HTML, CSS, and JavaScript.'], 'https://dharineesh17.w3spaces.com/')">
+                <img id="img1" src="./assests/portfolio_00.png" alt="Work 1">
+                <div class="overlay">
+                    <h4>Responsive Portfolio Website</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/restaurant.png'], ['Restaurant Website'], ['This project showcases a restaurant website built with HTML, CSS.'], 'https://dharineesh17.github.io/srirangaatiffenstall/')">
+                <img id="img2" src="./assests/restaurant.png" alt="Work 2">
+                <div class="overlay">
+                    <h4>Restaurant Website</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/notes.png'], ['Notes Taking App using Angular.'], ['Developed a simple and intuitive notes application for quick and organized note-taking. Technologies Used: HTML, CSS, JavaScript, Angular.'], 'none')">
+                <img id="img3" src="./assests/notes.png" alt="Work 3">
+                <div class="overlay">
+                    <h4>Notes Taking App using Angular</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/task.png'], ['Task App'], ['Developed a user-friendly to-do list application to manage tasks efficiently.'], 'https://dharineesh17.github.io/TodoListApp/')">
+                <img id="img4" src="./assests/task.png" alt="Work 4">
+                <div class="overlay">
+                    <h4>Task App</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/DailyUI_001_1.png','./assests/DailyUI_001_2.png'], ['Event Design'], ['Create a sign up page for a volunteer event'], 'none')">
+                <img id="img5" src="./assests/DailyUI_001_1.png" alt="Work 5">
+                <div class="overlay">
+                    <h4>Event Design</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/DailyUI_002.png'], ['Payment Gateway Design'], ['Design a credit card checkout page'], 'none')">
+                <img id="img6" src="./assests/DailyUI_002.png" alt="Work 6">
+                <div class="overlay">
+                    <h4>Payment Gateway Design</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery Section Modal Popup -->
+        <div id="myModal" class="galleryModal">
+            <span class="gallery-close-btn" onclick="closeModalGallery()">&times;</span>
+            <img class="galleryModal-content" id="modal-img">
+            <div id="modal-caption" class="galleryModal-caption"></div>
+            <div id="modal-link" class="galleryModal-link"></div>
+            <div id="modal-description" style="color: white; text-align: center; font-size: 16px; margin-top: 10px;"></div>
+            <!-- Slider Controls -->
+            <a class="prev" id="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" id="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <blockquote class="quote">"Success is the sum of small efforts, repeated day in and day out."</blockquote>
     </section>
 
     <!-- Certifications section -->
     <section id="certification" class="section">
-        <h2>Certifications</h2>
+        <h2 class="h2">Certifications</h2>
         <div class="certification-list">
             <div class="certification-item">
-                <h3>Web Development Fundamentals - IBM Skill Build</h3>
-                <p><strong>Year:</strong> 2024</p>
+                <h3 class="h3">National Qualifier Test - IT</h3>
+                <p><strong>Issuing Organization: </strong>TCS ION</p>
+                <p><strong>Skills: </strong>Aptitude, Python</p>
+                <p><strong>Date: </strong> Jul 2024</p>
             </div>
             <div class="certification-item">
-                <h3>National Qualifier Test - IT</h3>
-                <p><strong>Year:</strong> 2024</p>
+                <h3 class="h3">Angular NestJS</h3>
+                <p><strong>Issuing Organization: </strong>SoloLearn</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.sololearn.com/certificates/CC-3Z95KNGA" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>Angular, HTML, CSS, JS</p>
+                <p><strong>Date:</strong> Jun 2024</p>
             </div>
             <div class="certification-item">
-                <h3>Angular</h3>
-                <p><strong>Year:</strong> 2024</p>
-                
+                <h3 class="h3">Web Development Fundamentals - IBM Skill Build</h3>
+                <p><strong>Issuing Organization: </strong>IBM</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.credly.com/badges/f52c0b3c-d0c2-4f98-9962-d881f1508d70/linked_in_profile" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>HTML, CSS, JS</p>
+                <p><strong>Date:</strong> May 2024</p>
             </div>
-            <!-- <div class="certification-item">
-                <h3>Machine Learning Internship</h3>
-                <p><strong>Year:</strong> 2021</p>
-            </div> -->
+            <div class="certification-item">
+                <h3 class="h3"><p><strong>Skills: </strong>Java</p></h3>
+                <p><strong>Issuing Organization: </strong>SoloLearn</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.sololearn.com/certificates/CC-YHK3DKWU" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>Angular, HTML, CSS, JS</p>
+                <p><strong>Date:</strong> Feb 2024</p>
+            </div>
+            <div class="certification-item">
+                <h3 class="h3">Java</h3>
+                <p><strong>Issuing Organization: </strong>SoloLearn</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.sololearn.com/certificates/CC-URAHTHYQ" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>Java</p>
+                <p><strong>Date:</strong> Jan 2024</p>
+            </div> 
+            <div class="certification-item">
+                <h3 class="h3">Programming, Data Structures and Algorithms Using Python</h3>
+                <p><strong>Issuing Organization: </strong>Indian Institute of Technology Madras</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://drive.google.com/file/d/1O8udoHGpUag_1_ClYPhrQr3IjnA_YQya/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>Python, DSA</p>
+                <p><strong>Date:</strong> Sep 2023</p>
+            </div>
+            <div class="certification-item">
+                <h3 class="h3">Intelligent Systems for Molecular Biology/European Conference on Computational Biology (ISMB/ECCB) 2023</h3>
+                <p><strong>Issuing Organization: </strong>ISCB - International Society for Computational Biology</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://drive.google.com/file/d/1dj4taerwoUTRIfIejHpgPVP2UpGPzkf6/view" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.youtube.com/watch?v=WZSEj2si1ws" target="_blank" rel="noopener noreferrer">Click to View Video</a></p>
+                <p><strong>Skills: </strong> Video Editing, Presentation Skills, Bioinformatics, Poster Design</p>
+                <p><strong>Date:</strong> Jul 2023</p>
+            </div>
+            <div class="certification-item">
+                <h3 class="h3">Responsive Web Design</h3>
+                <p><strong>Issuing Organization: </strong>SoloLearn</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.sololearn.com/certificates/CT-3MGNVFLC" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>HTML, CSS</p>
+                <p><strong>Date:</strong> Sep 2023</p>
+            </div>
+            <div class="certification-item">
+                <h3 class="h3">JavaScript</h3>
+                <p><strong>Issuing Organization: </strong>SoloLearn</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.sololearn.com/certificates/CT-8M1W8SAJ" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>JavaScript</p>
+                <p><strong>Date:</strong> Dec 2021</p>
+            </div>
+            <div class="certification-item">
+                <h3 class="h3">Cascading Style Sheets</h3>
+                <p><strong>Issuing Organization: </strong>SoloLearn</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.sololearn.com/certificates/CT-0VZSYASX" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>CSS</p>
+                <p><strong>Date:</strong> Nov 2021</p>
+            </div>
+            <div class="certification-item">
+                <h3 class="h3">Hypertext Markup Language</h3>
+                <p><strong>Issuing Organization: </strong>SoloLearn</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.sololearn.com/certificates/CT-BFECT3LS" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>HTML</p>
+                <p><strong>Date:</strong> Nov 2021</p>
+            </div>
+            <div class="certification-item">
+                <h3 class="h3">Python Core</h3>
+                <p><strong>Issuing Organization: </strong>SoloLearn</p>
+                <p><strong>Link: </strong><a class="certificationLink" href="https://www.sololearn.com/certificates/CT-XXXBGPI4" target="_blank" rel="noopener noreferrer">Click to View Credentials</a></p>
+                <p><strong>Skills: </strong>Python</p>
+                <p><strong>Date:</strong> May 2021</p>
+            </div>
         </div>
-        <blockquote class="quote">"An investment in knowledge always pays the best interest." – Benjamin Franklin</blockquote>
+        <blockquote class="quote">"An investment in knowledge always pays the best interest."</blockquote>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="contactH2">Get in Touch</h2>
+            <blockquote class="contactQuote">"Where creativity meets code. Find me here."</blockquote>
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <div>
+                    <h4>Address</h4>
+                    <p>Tiruchirappalli, TN, India</p>
+                </div>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+91 9x8x6x7x1x</p>
+                </div>
+                <div>
+                    <h4>Email</h4>
+                    <p><a href="mailto:dharineesh17@yahoo.com">dharineesh17@yahoo.com</a></p>
+                </div>
+            </div>
+            <!-- Google Form for Contact -->
+            <div class="google-form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiNJqbeZIWElQD5JSmN2_snmZrdAMgKAuhdkzc34e1mXqCCQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <blockquote class="quote">"Let’s connect and create something amazing."</blockquote>
+        </div>
     </section>
 
     <footer>
-        <div class="contact-details">
-            <p>Contact Me: <a href="mailto:dharineesh17@yahoo.com">dharineesh17@yahoo.com</a></p>
-        </div>
         <p>&COPY; 2024 Dharineesh K S. All rights reserved.</p>
         <p>Website Version: <span id="version"></span> Last Updated: <span id="lastUpdated"></span></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
+
 </body>
 </html>
