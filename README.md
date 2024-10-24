@@ -40,7 +40,8 @@ You can view the live version of this website at: [My Portfolio Website](https:/
 
 Feel free to reach out if you have any questions or feedback.
 
-- **Email**: dharineesh@example.com
+- **Email**: dharineesh17@yahoo.com
 - **GitHub**: [Dharineesh17](https://github.com/dharineesh17)
 - **LinkedIn**: [Dharineesh's LinkedIn](https://linkedin.com/in/dharineesh17)
+- **Website**: [Dharineesh's Website](https://dharineesh17.github.io/PortfolioWebsite/)
 ---

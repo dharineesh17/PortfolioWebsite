@@ -62,6 +62,7 @@ body {
     border-left: 4px solid #8a2be2;
     padding-left: 1.5rem;
     transition: background-color 0.3s ease;
+    text-align: justify;
 }
 
 .experience-item:hover, .education-item:hover, .certification-item:hover {
@@ -355,6 +356,15 @@ svg {
     border: 2px solid #8a2be2;
 }
 
+.about-text {
+    text-align: justify;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
 /* Mobile responsive layout */
 @media screen and (max-width: 768px) {
     .about-content {
@@ -376,7 +386,7 @@ svg {
 /* about button Style */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px;
     background-color: #252027;
     color: rgb(255, 255, 255);
     border-radius: 5px;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            color: #333;
+            text-align: center;
+            padding: 5%;
+        }
+        h1 {
+            font-size: 6rem;
+            color: #8a2be2;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .redirecting {
+            margin-top: 40px;
+            font-style: italic;
+            color: #8a2be2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for can't be found.</p>
+        <p class="redirecting">Redirecting you to the home page in <span id="countdown">10</span> seconds...</p>
+        <button style="padding: 5px; color: #8a2be2; font-size: 1.5rem;"><a href="index.html" style="text-decoration: none;">Go to Home Page</a></button>
+        
+    </div>
+
+    <script>
+        let countdownNumber = 10;
+        const countdownElement = document.getElementById('countdown');
+
+        const countdownInterval = setInterval(() => {
+            countdownNumber--;
+            countdownElement.textContent = countdownNumber;
+
+            if (countdownNumber <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = 'index.html'; // Redirect to home page
+            }
+        }, 1000); // Countdown interval of 1 second
+    </script>
+</body>
+</html>

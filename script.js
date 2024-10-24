@@ -86,12 +86,12 @@ sections.forEach(section => {
 // Function to display modal and inject project details
 function showDetails(projectId) {
     const projects = {
-        'project1': '<p><strong>Description:</strong> Developed a responsive portfolio website to showcase web development projects and skills. </p> <p><strong>Technologies Used:</strong> HTML, CSS. Features: Creative SVG designs, LinkedIn and GitHub buttons, resume download button, smooth animations, and attractive UI/UX. </p> <p><strong>Deployment:</strong> Deployed and hosted on W3Spaces.</p>',
+        'project1': '<p><strong>Description:</strong> Developed a responsive portfolio website to showcase web development projects and skills. </p> <p><strong>Technologies Used:</strong> HTML, CSS, and JavaScript.</p> <p><strong>Features:</strong> Responsive Design: The website is fully responsive, ensuring a seamless experience across devices (mobile, tablet, and desktop). Work Gallery: A visually appealing gallery displays a collection of my projects, with modal popups providing detailed descriptions and images for multi-image projects. Light and Dark Mode: Users can toggle between light and dark themes for a personalized viewing experience. Smooth Animations: Implemented animations enhance user engagement and create a modern look and feel. </p> <p><strong>Deployment:</strong> Deployed and hosted on GitHub Pages.</p>',
         'project2': '<p><strong>Description:</strong> Utilized HTML and CSS to build an appealing and user-friendly front-end interface for a restaurant website. </p><p><strong>Technologies Used:</strong> HTML, CSS, Git. </p><p><strong> Deployment:</strong> Deployed on GitHub Pages, ensuring a seamless experience for users.</p>',
         'project3': '<p><strong>Description:</strong> Proficient in data extraction and cleaning from various sources using Python programming. </p><p><strong>Technologies Used:</strong> Python for data processing and integration, web development for application presentation.</p>',
-        'project4': '<p><strong>Description:</strong> Developed a user-friendly to-do list application to manage tasks efficiently. </p><p><strong>Features:</strong> Add, delete, and mark tasks as complete; responsive design for cross-device compatibility. </p><p><strong> Technologies Used:</strong> HTML, CSS, JavaScript. </p><p><strong>Deployment:</strong> Deployed on GitHub Pages. </p><p><strong>Learning Source:</strong> IBM Skill Build program.</p>',
-        'project5': '<p><strong>Description:</strong> Developed a simple and intuitive notes application for quick and organized note-taking. </p><p><strong>Features:</strong> Create, edit, delete notes; responsive design for multiple devices. </p><p><strong> Technologies Used:</strong> HTML, CSS, JavaScript. </p><p><strong>Learning Source:</strong> SoloLearn program.</p>',
-        'project6': '<p><strong>Description:</strong> Analyzed data using bioinformatics tools to identify critical protein interactions and conformational changes. Additionally, made significant contributions to the thesis and presentations, presenting key findings from the project. Utilizing Unix commands, accessed the server for data processing.</p>',
+        'project4': '<p><strong>Description:</strong> Developed a user-friendly to-do list application to manage tasks efficiently. </p><p><strong> Technologies Used:</strong> HTML, CSS, JavaScript. <p><strong>Features:</strong> Add, delete, and mark tasks as complete; responsive design for cross-device compatibility. </p> </p><p><strong>Deployment:</strong> Deployed on GitHub Pages. </p><p><strong>Learning Source:</strong> IBM Skill Build program.</p>',
+        'project5': '<p><strong>Description:</strong> Developed a simple and intuitive notes application for quick and organized note-taking. </p><p><strong> Technologies Used:</strong> HTML, CSS, JavaScript, and Angular. <p><strong>Features:</strong> Create, edit, delete notes; responsive design for multiple devices. </p> </p><p><strong>Learning Source:</strong> SoloLearn program.</p>',
+        'project6': '<p><strong>Description:</strong> Analyzed data using bioinformatics tools to identify critical protein interactions and conformational changes. Additionally, made significant contributions to the thesis and presentations, presenting key findings from the project. Utilizing Unix commands, accessed the server for data processing.</p><p><strong>Skills: </strong> Video Editing, Presentation Skills, Bioinformatics, Poster Design.</p><a class="certificationLink" href="https://www.youtube.com/watch?v=WZSEj2si1ws" target="_blank" rel="noopener noreferrer">Click to View Video</a></p>',
     };
     
 
@@ -177,8 +177,8 @@ function changeSlide(n) {
 // Gallery Script End
 
 // footer Script Start
-var websiteVersion = "2.0";
-var lastUpdated = new Date(2024, 9, 6);
+var websiteVersion = "2.1";
+var lastUpdated = new Date(2024, 9, 24);
 document.getElementById("version").textContent = websiteVersion;
 document.getElementById("lastUpdated").textContent = lastUpdated.toLocaleString('en-US', {
   year: 'numeric',
