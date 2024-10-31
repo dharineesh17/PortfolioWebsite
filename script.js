@@ -62,24 +62,24 @@ sections.forEach(section => {
 
 // Disable Script Start
 // Disable right-click context menu
-// document.addEventListener('contextmenu', function(event) {
-//     event.preventDefault();
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
 // });
 
 // Disable text selection
-// document.addEventListener('selectstart', function(event) {
-//     event.preventDefault();
+document.addEventListener('selectstart', function(event) {
+    event.preventDefault();
 // });
 
 // Disable Ctrl+C (Copy)
-// document.addEventListener('copy', function(event) {
-//     event.preventDefault();
+document.addEventListener('copy', function(event) {
+    event.preventDefault();
 // });
 
 // Disable Ctrl+V (Paste)
-// document.addEventListener('paste', function(event) {
-//     event.preventDefault();
-// });
+document.addEventListener('paste', function(event) {
+    event.preventDefault();
+});
 // Disable Script End
 
 // Project Section Code Start
@@ -178,7 +178,7 @@ function changeSlide(n) {
 
 // footer Script Start
 var websiteVersion = "2.1";
-var lastUpdated = new Date(2024, 9, 24);
+var lastUpdated = new Date(2024, 9, 31);
 document.getElementById("version").textContent = websiteVersion;
 document.getElementById("lastUpdated").textContent = lastUpdated.toLocaleString('en-US', {
   year: 'numeric',
