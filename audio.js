@@ -33,3 +33,4 @@ function toggleMusic() {
         }
     }
 }
+document.getElementById("background-music").volume = 0.3;
