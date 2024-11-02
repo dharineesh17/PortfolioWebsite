@@ -18,6 +18,22 @@ modeToggle.addEventListener('change', () => {
         localStorage.setItem('darkMode', 'disabled');
     }
 });
+
+function changeText() {
+    const modeType = document.getElementById("modeType");
+    const modeToggle = document.getElementById("modeToggle");
+
+    // Change the text based on the checkbox status
+    if (modeToggle.checked) {
+        modeType.textContent = "Dark-Mode"; // Change to Dark Mode
+        // Optional: Add additional code to switch to dark mode styles
+    } else {
+        modeType.textContent = "Light-Mode"; // Change to Light Mode
+        // Optional: Add additional code to switch to light mode styles
+    }
+}
+
+
 // Mode Script End
 
 // Toggle the navigation menu 
@@ -59,28 +75,6 @@ const observer = new IntersectionObserver(function (entries, observer) {
 sections.forEach(section => {
     observer.observe(section);
 });
-
-// Disable Script Start
-// Disable right-click context menu
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-});
-
-// Disable text selection
-document.addEventListener('selectstart', function(event) {
-    event.preventDefault();
-});
-
-// Disable Ctrl+C (Copy)
-document.addEventListener('copy', function(event) {
-    event.preventDefault();
-});
-
-// Disable Ctrl+V (Paste)
-document.addEventListener('paste', function(event) {
-    event.preventDefault();
-});
-// Disable Script End
 
 // Project Section Code Start
 // Function to display modal and inject project details
@@ -176,9 +170,16 @@ function changeSlide(n) {
 }
 // Gallery Script End
 
+window.addEventListener('scroll', function () {
+    const scrollProgress = document.getElementById('scroll-progress-bar');
+    const totalHeight = document.body.scrollHeight - window.innerHeight;
+    const progress = (window.scrollY / totalHeight) * 100;
+    scrollProgress.style.width = `${progress}%`;
+});
+
 // footer Script Start
-var websiteVersion = "2.1";
-var lastUpdated = new Date(2024, 9, 31);
+var websiteVersion = "2.2";
+var lastUpdated = new Date(2024, 10, 2);
 document.getElementById("version").textContent = websiteVersion;
 document.getElementById("lastUpdated").textContent = lastUpdated.toLocaleString('en-US', {
   year: 'numeric',

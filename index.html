@@ -13,21 +13,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./scrollBarBrowser.css">
 </head>
 <body>
+    <div id="scroll-progress-bar"></div>
     <!-- Header Section -->
+    <div class="top-header">
+        <!-- Music Player -->
+        <audio id="background-music" loop autoplay muted>
+            <source src="./assests/music/new-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Music Control Button -->
+        <button id="music-toggle" class="music-btn" onclick="toggleMusic()">Play Music</button>
+        <span id="modeType" style="margin-right: 8px;" >Light-Mode</span>
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="modeToggle" onclick="changeText()">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
     <header>
         <div class="logo">
             <a href="./index.html"> <img src="./assests/profile-pic.png" alt="Logo" width="50px" height="50px"></a>
         </div>
         <div class="header-text">Dharineesh's Portfolio</div>
-        <!-- Toggle Switch Container -->
-        <div class="switch-container">
-            <label class="switch">
-                <input type="checkbox" id="modeToggle">
-                <span class="slider"></span>
-            </label>
-        </div>
+       
     </header>
     
     <!-- Navigation Section -->
@@ -127,13 +140,13 @@
             <div class="scrolling-content">
                 <ul class="scrolling-list">
                     <li><a rel="noopener noreferrer" class="l" target="_blank" href="#">Working on a personal project to develop a portfolio website.</a></li>
-                    <li><a rel="noopener noreferrer" class="l" target="_blank" href="#">Working on a project to develop a restaurant website Version 2.0.</a></li>
-                    <li><a rel="noopener noreferrer" class="l" target="_blank" href="#">Practicing problem-solving and coding skills on HackerRank to enhance my programming abilities.</a></li>
+                    <li><a rel="noopener noreferrer" class="l" target="_blank" href="https://dharineesh17.github.io/srirangaatiffenstall/">Working on a project to develop a restaurant website Version 2.0.</a></li>
+                    <li><a rel="noopener noreferrer" class="l" target="_blank" href="https://www.hackerrank.com/profile/dharineesh17">Practicing problem-solving and coding skills on HackerRank to enhance my programming abilities.</a></li>
                     <li><a rel="noopener noreferrer" class="l" target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp">Currently enrolled in Udemy course "The Complete 2024 Web Development Bootcamp".</a></li>
                     <li><a rel="noopener noreferrer" class="l" target="_blank" href="https://skillsbuild.org/college-students/digital-credentials/artificial-intelligence-fundamentals">Taking IBM SkillsBuild course "Artificial Intelligence Fundamentals".</a></li>
+                    <li><a rel="noopener noreferrer" class="l" target="_blank" href="https://www.sololearn.com/certificates/CC-DLKOZDYX">Completed SQL Course - SoloLearn.</a></li>
                     <li><a rel="noopener noreferrer" class="l" target="_blank" href="https://www.credly.com/badges/f52c0b3c-d0c2-4f98-9962-d881f1508d70/linked_in_profile">Completed Web Development Fundamentals Course - IBM SkillsBuild.</a></li>
                     <li><a rel="noopener noreferrer" class="l" target="_blank" href="https://www.sololearn.com/certificates/CC-YHK3DKWU">Completed Angular Course - SoloLearn.</a></li>
-                    <li><a rel="noopener noreferrer" class="l" target="_blank" href="#">Enrolling in courses to enhance my skills and knowledge.</a></li>
                 </ul>
             </div>
         </div>
@@ -301,47 +314,96 @@
         <h2 class="h2">Works</h2>
         <div class="gallery-grid">
             <div class="gallery-item" onclick="openModal(['./assests/portfolio_00.png','./assests/portfolio_01.png'], ['Responsive Portfolio Website'], ['This project showcases a responsive portfolio website built using HTML, CSS, and JavaScript.'], 'https://dharineesh17.w3spaces.com/')">
-                <img id="img1" src="./assests/portfolio_00.png" alt="Work 1">
+                <img  src="./assests/portfolio_00.png" alt="Work 1">
                 <div class="overlay">
                     <h4>Responsive Portfolio Website</h4>
                     <p>Click to view </p>
                 </div>
             </div>
-            <div class="gallery-item" onclick="openModal(['./assests/restaurant.png'], ['Restaurant Website'], ['This project showcases a restaurant website built with HTML, CSS.'], 'https://dharineesh17.github.io/srirangaatiffenstall/')">
-                <img id="img2" src="./assests/restaurant.png" alt="Work 2">
+            <div class="gallery-item" onclick="openModal(['./assests/restaurant1.png','./assests/restaurant2.png'], ['Restaurant Website'], ['This project showcases a restaurant website built with HTML, CSS, JavaScript and Bootstrap.'], 'https://dharineesh17.github.io/srirangaatiffenstall/')">
+                <img  src="./assests/restaurant1.png" alt="Work 2">
                 <div class="overlay">
                     <h4>Restaurant Website</h4>
                     <p>Click to view </p>
                 </div>
             </div>
             <div class="gallery-item" onclick="openModal(['./assests/notes.png'], ['Notes Taking App using Angular.'], ['Developed a simple and intuitive notes application for quick and organized note-taking. Technologies Used: HTML, CSS, JavaScript, Angular.'], 'none')">
-                <img id="img3" src="./assests/notes.png" alt="Work 3">
+                <img  src="./assests/notes.png" alt="Work 3">
                 <div class="overlay">
                     <h4>Notes Taking App using Angular</h4>
                     <p>Click to view </p>
                 </div>
             </div>
             <div class="gallery-item" onclick="openModal(['./assests/task.png'], ['Task App'], ['Developed a user-friendly to-do list application to manage tasks efficiently.'], 'https://dharineesh17.github.io/TodoListApp/')">
-                <img id="img4" src="./assests/task.png" alt="Work 4">
+                <img  src="./assests/task.png" alt="Work 4">
                 <div class="overlay">
                     <h4>Task App</h4>
                     <p>Click to view </p>
                 </div>
             </div>
-            <div class="gallery-item" onclick="openModal(['./assests/DailyUI_001_1.png','./assests/DailyUI_001_2.png'], ['Event Design'], ['Create a sign up page for a volunteer event'], 'none')">
-                <img id="img5" src="./assests/DailyUI_001_1.png" alt="Work 5">
+            <div class="gallery-item" onclick="openModal(['./assests/volunteer1.png','./assests/volunteer2.png'], ['Event Design'], ['Create a sign up page for a volunteer event'], 'none')">
+                <img  src="./assests/volunteer1.png" alt="Work 5">
                 <div class="overlay">
                     <h4>Event Design</h4>
                     <p>Click to view </p>
                 </div>
             </div>
             <div class="gallery-item" onclick="openModal(['./assests/DailyUI_002.png'], ['Payment Gateway Design'], ['Design a credit card checkout page'], 'none')">
-                <img id="img6" src="./assests/DailyUI_002.png" alt="Work 6">
+                <img src="./assests/payment.png" alt="Work 6">
                 <div class="overlay">
                     <h4>Payment Gateway Design</h4>
                     <p>Click to view </p>
                 </div>
             </div>
+            <div class="gallery-item" onclick="openModal(['./assests/chatugpt1.png','./assests/chatugpt2.png'], ['Landing Page Design'], ['Design a landing page for ChatGPT'], 'https://drive.google.com/file/d/1-XfK-HTh1q-VcLcM58AdufdW9fomXx1B/view?usp=sharing')">
+                <img src="./assests/chatugpt1.png" alt="Work 7">
+                <div class="overlay">
+                    <h4>Landing Page Design</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/404.png'], ['404 Page Design'], ['Design a 404 page'], 'none')">
+                <img src="./assests/404.png" alt="Work 8">
+                <div class="overlay">
+                    <h4>404 Page Design</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/countdown.png'], ['Countdown Page Design'], ['Design a countdown page for launching rocket'], 'none')">
+                <img src="./assests/countdown.png" alt="Work 9">
+                <div class="overlay">
+                    <h4>Countdown Page Design</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/emi.png'], ['Calculator Page Design'], ['Design a calculator interface'], 'none')">
+                <img src="./assests/emi.png" alt="Work 10">
+                <div class="overlay">
+                    <h4>Calculator Page Design</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/profile.png'], ['Profile Design'], ['Design a user profile'], 'none')">
+                <img src="./assests/profile.png" alt="Work 11">
+                <div class="overlay">
+                    <h4>Profile Design</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <div class="gallery-item" onclick="openModal(['./assests/settings.png'], ['Settings Page Design'], ['Design settings page'], 'none')">
+                <img src="./assests/settings.png" alt="Work 12">
+                <div class="overlay">
+                    <h4>Settings Page Design</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>
+            <!-- <div class="gallery-item" onclick="openModal(['./assests/404.png'], ['404 Page Design'], ['Design a 404 page'], 'none')">
+                <img src="./assests/404.png" alt="Work 13">
+                <div class="overlay">
+                    <h4>404 Page Design</h4>
+                    <p>Click to view </p>
+                </div>
+            </div>   -->
         </div>
         <!-- Gallery Section Modal Popup -->
         <div id="myModal" class="galleryModal">
@@ -485,7 +547,7 @@
     </section>
 
     <footer>
-        <a href="./assets/resume.pdf" class="btn" target="_blank" download>
+        <a href="https://drive.google.com/file/d/1-HJVdCO-QpQRtsqVZZ6moEh6OKQr42OX/view?usp=sharing" class="btn" target="_blank" download>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
@@ -512,6 +574,8 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./audio.js"></script>
+    <script src="./disable.js"></script>
 
 </body>
 </html>

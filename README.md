@@ -7,6 +7,17 @@
 - [Live Preview](#live-preview)
 - [Technologies Used](#technologies-used)
 - [Contact](#contact)
+- [Acknowledgments](#Acknowledgments)
+
+## Version Updates
+### Version 2.2
+- **Added Audio Music**: Background music feature for an enhanced user experience.
+- **Scroll Progress Bar**: Visual indicator of the user's scroll progress on the page.
+- **Modified CSS**: Improved styles for better user interaction.
+- **Custom Scrollbar CSS**: Implemented a personalized scrollbar design for aesthetics.
+- **Disabled JavaScript**: Separated JavaScript functionality into a different file.
+- **Updated README**: Reflects the latest changes and features added.
+
 
 ## Description
 
@@ -44,4 +55,21 @@ Feel free to reach out if you have any questions or feedback.
 - **GitHub**: [Dharineesh17](https://github.com/dharineesh17)
 - **LinkedIn**: [Dharineesh's LinkedIn](https://linkedin.com/in/dharineesh17)
 - **Website**: [Dharineesh's Website](https://dharineesh17.github.io/PortfolioWebsite/)
+
+## Acknowledgments
+
+I would like to express my gratitude to the following tools and platforms that contributed to the development of this portfolio website:
+
+- **Visual Studio Code**: For being an efficient and user-friendly code editor that made the development process smooth and enjoyable.
+- **CodeSwing**: For offering a collaborative coding environment that facilitated quick prototyping and testing of code snippets.
+- **Canva**: For providing design templates and resources that enhanced the visual appeal of the website.
+- **ChatGPT**: For assisting in generating content and code snippets, improving the overall efficiency of the development process.
+- **GeminiAI**: For offering AI-driven insights that aided in optimizing the user experience.
+- **TopMediai**: For enabling AI music generation, which added a unique touch to the website’s background audio.
+- **Git**: For version control, helping manage changes and collaborate effectively.
+- **GitHub**: For hosting the repository and providing a platform for collaboration and sharing.
+
+Thank you for the amazing resources and tools that made this project possible!
+
+
 ---

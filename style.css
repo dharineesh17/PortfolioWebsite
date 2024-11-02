@@ -28,7 +28,15 @@ body {
     color: #252027;
     font-size: 1.2rem;
 }
-
+/* scroll progress bar Styles */
+#scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #8a2be2;
+    z-index: 1000;
+}
 /* Section Styles */
 .section {
     padding: 3rem;
@@ -73,6 +81,12 @@ body {
 /* Global Style End */
 
 /* Header Styles Start*/
+.top-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 2px;
+}
 header { 
     display: flex;
     justify-content: space-between;
@@ -81,15 +95,19 @@ header {
     padding: 15px 0px 0px 5px;
     color: #fff;
     text-align: center;
-    font-family: "Abel", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .header-text {
     font-weight: bold;
+    font-size: 16px;
+    padding-right: 8px;
 }
-
+.logo {
+    padding-left: 5px;
+}
 /* Dark Mode Styling Start*/
 
 body.dark-mode {
@@ -123,6 +141,9 @@ body.dark-mode .contact-details a {
 body.dark-mode header{
     background-color: #8a2be2;
 }
+body.dark-mode nav ul li a:hover {
+    background-color: #252027;
+}
 body.dark-mode .slider::before {
     background-color: #8a2be2;
 }
@@ -139,6 +160,10 @@ body.dark-mode .scrollText {
 }
 
 body.dark-mode .btn {
+    background-color: #8a2be2;
+}
+
+body.dark-mode .music-btn {
     background-color: #8a2be2;
 }
 
@@ -255,9 +280,10 @@ nav {
     align-items: center;
     color: #fff;
     background-color: #252027;
-    font-family: "Abel", sans-serif;
+    font-family: 'Poppins', sans-serif;
     justify-content: center;
     padding-bottom: 10px;
+    
 }
 .nav-links {
     list-style: none;
@@ -268,12 +294,13 @@ nav {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 300;
     display: inline-flex;
     align-items: center;
 }
 nav ul li a:hover {
-    border: 2px solid;
+    background-color: #8a2be2;
+    transform: scale(1.05);
 }
 /* SVG Icons */
 svg {
@@ -325,6 +352,10 @@ svg {
         padding: 1rem 0;
         padding-left: 1rem;
         z-index: 2;
+    }
+
+    body.dark-mode .nav-links {
+        background-color: #8a2be2;
     }
 
     .nav-links.active {
@@ -385,9 +416,9 @@ svg {
         text-align: center;
     }
 }
-/* about button Style */
+/* button Style */
 .btn {
-    display: inline-block;
+    display: inline-flex;
     padding: 5px;
     background-color: #252027;
     color: rgb(255, 255, 255);
@@ -424,6 +455,16 @@ svg {
 
 .btn:hover::after {
     transform: translateX(-50%) scaleX(1);
+}
+
+.music-btn {
+    margin-right: 8px;
+    padding: 5px;
+    background-color: #252027;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center; 
 }
 
 /* Scroll Style Start */
@@ -811,7 +852,7 @@ footer {
     text-align: center;
     position: relative;
     margin-top: 3rem;
-    font-family: "Abel", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
