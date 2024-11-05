@@ -58,29 +58,34 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
 /* List Styles Start*/
 .experience-list, .education-list, .certification-list, .skill-list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-
 .experience-item, .education-item, .certification-item {
     border-left: 4px solid #8a2be2;
     padding-left: 1.5rem;
     transition: background-color 0.3s ease;
     text-align: justify;
 }
-
 .experience-item:hover, .education-item:hover, .certification-item:hover {
     background-color: #f0e6ff;
 }
 /* List Styles End*/
-
 /* Global Style End */
 
 /* Header Styles Start*/
+.time-display {
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #252027;
+    border-radius: 5px;
+    color: white;
+}
 .top-header {
     display: flex;
     justify-content: end;
@@ -89,7 +94,7 @@ body {
 }
 header { 
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
     align-items: center;
     background-color: #252027;
     padding: 15px 0px 0px 5px;
@@ -99,22 +104,25 @@ header {
     font-weight: 400;
     font-style: normal;
 }
-
+header div {
+    padding: 0 30px 0 2px;
+}
 .header-text {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     padding-right: 8px;
 }
 .logo {
-    padding-left: 5px;
+    /* padding-left: 5px; */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #8a2be2;
 }
 /* Dark Mode Styling Start*/
-
 body.dark-mode {
     background-color: black;
     color: #f4f4f4;
 }
-
 body.dark-mode .quote {
     font-style: italic;
     text-align: center;
@@ -122,27 +130,32 @@ body.dark-mode .quote {
     color: white;
     font-size: 1.2rem;
 }
-
 body.dark-mode .contactQuote {
     font-style: italic;
     text-align: center;
     color: #f4f4f4;
     font-size: 1.2rem;
 }
-
 body.dark-mode .contact-details p {
     color: #f4f4f4;
 }
-
 body.dark-mode .contact-details a {
     text-decoration: none;
     color: #f4f4f4;
 }
-body.dark-mode header{
+body.dark-mode header {
     background-color: #8a2be2;
 }
-body.dark-mode nav ul li a:hover {
+body.dark-mode .logo {
+    /* padding-left: 5px; */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+body.dark-mode nav ul li:hover {
     background-color: #252027;
+    border-radius: 5px;
+    transform: scale(1.20);
 }
 body.dark-mode .slider::before {
     background-color: #8a2be2;
@@ -150,46 +163,36 @@ body.dark-mode .slider::before {
 body.dark-mode .scrolling-list a {
     color: #f4f4f4;
 }
-
 body.dark-mode nav {
     background-color: #8a2be2;
 }
-
 body.dark-mode .scrollText {
     color: #f4f4f4;
 }
-
 body.dark-mode .btn {
     background-color: #8a2be2;
 }
-
-body.dark-mode .music-btn {
+body.dark-mode .music-btn, body.dark-mode .time-display {
     background-color: #8a2be2;
 }
-
 body.dark-mode .btn:hover {
     background-color: #252027;
 }
 body.dark-mode .btn::after {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
 body.dark-mode .h2 {
     color: #f4f4f4;
 }
-
 body.dark-mode .h3 {
     color: #f4f4f4;
 }
-
 body.dark-mode .experience-item:hover {
     background-color: #8a2be2;
 }
-
 body.dark-mode .education-item:hover {
     background-color: #8a2be2;
 }
-
 body.dark-mode .certification-item:hover {
     background-color: #8a2be2;
 }
@@ -199,15 +202,12 @@ body.dark-mode .certificationLink{
 body.dark-mode .project {
     color: black;
 }
-
 body.dark-mode .project:hover {
     color: white;
 }
-
 body.dark-mode footer{
     background-color: #8a2be2;
 }
-
 /* Toggle Switch Container */
 .switch-container {
     display: grid;
@@ -216,7 +216,6 @@ body.dark-mode footer{
     margin-top: 5px;
     margin-right: 5px;
 }
-
 /* Toggle Switch */
 .switch {
     position: relative;
@@ -224,13 +223,11 @@ body.dark-mode footer{
     width: 32px;
     height: 22px;
 }
-
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-
 /* Slider */
 .slider {
     position: absolute;
@@ -243,7 +240,6 @@ body.dark-mode footer{
     transition: 0.4s;
     border-radius: 34px;
 }
-
 .slider:before {
     position: absolute;
     content: "";
@@ -255,25 +251,19 @@ body.dark-mode footer{
     transition: 0.4s;
     border-radius: 50%;
 }
-
 /* When checked, move the slider */
 input:checked + .slider {
     background-color: #8a2be2;
 }
-
 input:checked + .slider:before {
     transform: translateX(10px);
 }
-
 /* Dark Mode Toggle */
 input:checked + .slider {
     background-color: #f4f4f4;
 }
-
 /* Dark Mode Styling End*/
-
 /* Header Styles End*/
-
 /* Navigation Styles Start*/
 nav {
     display: flex;
@@ -281,9 +271,9 @@ nav {
     color: #fff;
     background-color: #252027;
     font-family: 'Poppins', sans-serif;
-    justify-content: center;
+    justify-content: end;
     padding-bottom: 10px;
-    
+    padding-right: 10px;
 }
 .nav-links {
     list-style: none;
@@ -294,13 +284,14 @@ nav {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: bolder;
     display: inline-flex;
     align-items: center;
 }
-nav ul li a:hover {
+nav ul li:hover {
     background-color: #8a2be2;
-    transform: scale(1.05);
+    border-radius: 5px;
+    transform: scale(1.20);
 }
 /* SVG Icons */
 svg {
@@ -338,7 +329,6 @@ svg {
     nav {
         justify-content: end;
     }
-
     .nav-links {
         display: none; /* Hide links initially */
         position: absolute;
@@ -353,15 +343,17 @@ svg {
         padding-left: 1rem;
         z-index: 2;
     }
-
+    nav ul li a:hover {
+        background-color: #8a2be2;
+        border-radius: 5px;
+        transform: scale(1.20);
+    }
     body.dark-mode .nav-links {
         background-color: #8a2be2;
     }
-
     .nav-links.active {
         display: flex; /* Show links when active */
     }
-
     .hamburger {
         display: flex; /* Show hamburger menu */
         margin-right: 5px;
@@ -370,7 +362,6 @@ svg {
     }
 }
 /* Navigation Styles End*/
-
 /* About Section Styles Start */
 .about-content {
     display: grid;
@@ -380,7 +371,6 @@ svg {
     justify-content: center;
     align-items: center;
 }
-
 .profile-photo {
     border-radius: 50%;
     width: 150px;
@@ -388,30 +378,25 @@ svg {
     object-fit: cover;
     border: 2px solid #8a2be2;
 }
-
 .about-text {
     text-align: justify;
 }
-
 .about-text p {
     margin-bottom: 10px;
     padding: 2px;
 }
-
 /* Mobile responsive layout */
 @media screen and (max-width: 768px) {
     .about-content {
         grid-template-columns: 1fr; /* Stack image and text */
 
     }
-
     /* Stack buttons in one column on mobile */
     .about-btn {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-
     .about-img {
         text-align: center;
     }
@@ -434,12 +419,10 @@ svg {
     align-items: center;
     justify-content: center;
 }
-
 .btn:hover {
     background-color: #8a2be2;
     transform: scale(1.05);
 }
-
 .btn::after {
     content: "";
     position: absolute;
@@ -452,11 +435,9 @@ svg {
     transition: transform 0.5s ease-in-out;
     z-index: 1;
 }
-
 .btn:hover::after {
     transform: translateX(-50%) scaleX(1);
 }
-
 .music-btn {
     margin-right: 8px;
     padding: 5px;
@@ -466,7 +447,6 @@ svg {
     align-items: center;
     justify-content: center; 
 }
-
 /* Scroll Style Start */
 .scrollText {
     text-align: center;
@@ -510,9 +490,7 @@ svg {
     }
 }
 /* Scroll Style End */
-
 /* About Section Styles End */
-
 /* Skill Section Styles Start*/
 .skill-list {
     display: grid;
@@ -539,7 +517,6 @@ svg {
     transform: scale(1.1);
 }
 /* Skill Section Styles End*/
-
 /* Certification Section Styles Start*/
 .certificationLink{
     color: black;
@@ -549,21 +526,18 @@ svg {
     text-decoration: underline;
 }
 /* Certification Section Styles End*/
-
 /* Animations Start */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
 /* Animations End */
-
 /* Project Section Style Start*/
 .project-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 .project {
     margin-bottom: 5px;
     border: 1px solid #ccc;
@@ -575,18 +549,15 @@ svg {
     transition: transform 0.3s ease, background-color 0.3s ease;
     border-radius: 5px;
 }
-
 .project:hover {
     transform: scale(1.05);
     background-color: #8a2be2;
     color: white;
 }
-
 .projectH3{
     margin-top: 2rem;
     margin-bottom: 1rem; 
 }
-
 /* Modal styles */
 .modal {
     display: none;
@@ -600,7 +571,6 @@ svg {
     background-color: rgba(0, 0, 0, 0.7);
     
 }
-
 .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
@@ -611,7 +581,6 @@ svg {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
 .close {
     color: #aaa;
     float: right;
@@ -619,25 +588,21 @@ svg {
     font-weight: bold;
     cursor: pointer;
 }
-
 .close:hover,
 .close:focus {
     color: rgb(138, 43, 226);
     text-decoration: none;
 }
-
 .modal-header {
     font-size: 24px;
     margin-bottom: 10px;
     color: #252027;
 }
-
 .modal-body {
     color: #555;
     font-size: 16px;
     line-height: 1.5;
 }
-
 @media (max-width: 768px) {
     .project {
         width: 100%;
@@ -720,7 +685,6 @@ svg {
     max-width: 90%;
     width: 70%;
 }
-
 .galleryModal-link{
     color: white;
     text-align: center;
@@ -787,46 +751,38 @@ svg {
     padding: 60px 0;
     font-family: 'Poppins', sans-serif;
 }
-
 .contactH2 {
     text-align: center;
     font-size: 2rem;
     color: #8a2be2;
 }
-
 .contactQuote {
     font-style: italic;
     text-align: center;
     color: #252027;
     font-size: 1.2rem;
 }
-
 .contact-details {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
     flex-wrap: wrap;
 }
-
 .contact-details div {
     flex: 1;
     margin: 15px;
 }
-
 .contact-details h4 {
     color: #8a2be2;
     margin-bottom: 10px;
 }
-
 .contact-details p {
     color: #252027;
 }
-
 .contact-details a {
     text-decoration: none;
     color: #252027;
 }
-
 /* Google Form */
 .google-form iframe {
     width: 100%;
@@ -834,16 +790,13 @@ svg {
     border: 3px solid #8a2be2;
     border-radius: 8px;
     margin: 1 auto;
-
 }
-
 @media (max-width: 768px) {
     .contact-details {
         display: grid;
     }
 }
 /* Contact Section End*/
-
 /* Footer Styles Start*/
 footer {
     background-color: #252027;
@@ -856,11 +809,9 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
-
 footer p {
     margin: 2px;
 }
-
 footer a {
     color: white;
     display: inline-flex;

@@ -33,6 +33,19 @@ function changeText() {
     }
 }
 
+function updateTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    
+    const timeString = `${hours}:${minutes}:${seconds} (${timeZone})`;
+    document.getElementById("time-display").textContent = timeString;
+}
+
+// Update the time every second
+setInterval(updateTime, 1000);
 
 // Mode Script End
 
@@ -179,7 +192,7 @@ window.addEventListener('scroll', function () {
 
 // footer Script Start
 var websiteVersion = "2.2";
-var lastUpdated = new Date(2024, 10, 2);
+var lastUpdated = new Date(2024, 10, 5);
 document.getElementById("version").textContent = websiteVersion;
 document.getElementById("lastUpdated").textContent = lastUpdated.toLocaleString('en-US', {
   year: 'numeric',
