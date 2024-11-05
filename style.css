@@ -152,7 +152,7 @@ body.dark-mode .logo {
     object-fit: cover;
     border: 2px solid white;
 }
-body.dark-mode nav ul li:hover {
+body.dark-mode nav ul li a:hover {
     background-color: #252027;
     border-radius: 5px;
     transform: scale(1.20);
@@ -288,7 +288,7 @@ nav ul li a {
     display: inline-flex;
     align-items: center;
 }
-nav ul li:hover {
+nav ul li a:hover {
     background-color: #8a2be2;
     border-radius: 5px;
     transform: scale(1.20);
@@ -342,11 +342,6 @@ svg {
         padding: 1rem 0;
         padding-left: 1rem;
         z-index: 2;
-    }
-    nav ul li a:hover {
-        background-color: #8a2be2;
-        border-radius: 5px;
-        transform: scale(1.20);
     }
     body.dark-mode .nav-links {
         background-color: #8a2be2;
