@@ -208,6 +208,12 @@ body.dark-mode .project:hover {
 body.dark-mode footer{
     background-color: #8a2be2;
 }
+body.dark-mode .btn-li:hover {
+    background-color: #0077B5;
+}
+body.dark-mode .btn-hr:hover {
+    background-color: #2EC866;
+}
 /* Toggle Switch Container */
 .switch-container {
     display: grid;
@@ -415,8 +421,17 @@ svg {
     justify-content: center;
 }
 .btn:hover {
-    background-color: #8a2be2;
+    /* background-color: #8a2be2; */
     transform: scale(1.05);
+}
+.btn:hover {
+    background-color: #8a2be2;
+}
+.btn-li:hover {
+    background-color: #0077B5;
+}
+.btn-hr:hover {
+    background-color: #2EC866;
 }
 .btn::after {
     content: "";
