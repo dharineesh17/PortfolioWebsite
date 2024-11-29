@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Links List</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #252027;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: #8a2be2;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px 0;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .link-item {
+            text-decoration: none;
+            color: white;
+            background-color: #8a2be2;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .link-item:hover {
+            background-color: #6d23c9;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 10px 0;
+            text-align: center;
+            background-color: #8a2be2;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .link-item {
+                font-size: 0.9rem;
+                padding: 12px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Useful Links</h1>
+    </header>
+    <main>
+        <div class="links-container">
+            <a href="https://example.com" target="_blank" class="link-item">Example Link 1</a>
+            <a href="https://example.com" target="_blank" class="link-item">Example Link 2</a>
+            <a href="https://example.com" target="_blank" class="link-item">Example Link 3</a>
+            <a href="https://example.com" target="_blank" class="link-item">Example Link 4</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+</body>
+</html>
