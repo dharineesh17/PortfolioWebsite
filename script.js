@@ -191,8 +191,8 @@ window.addEventListener('scroll', function () {
 });
 
 // footer Script Start
-var websiteVersion = "2.2";
-var lastUpdated = new Date(2024, 10, 5);
+var websiteVersion = "2.3";
+var lastUpdated = new Date(2024, 11, 2);
 document.getElementById("version").textContent = websiteVersion;
 document.getElementById("lastUpdated").textContent = lastUpdated.toLocaleString('en-US', {
   year: 'numeric',
